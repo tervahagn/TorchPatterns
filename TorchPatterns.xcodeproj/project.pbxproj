@@ -11,6 +11,7 @@
 		08C80FC30B840FC34504CE29 /* PatternEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7FE72D183F75E8773437044 /* PatternEngine.swift */; };
 		168B10F54C036EB4F276E554 /* TorchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223735B9A33ACA7028A673BF /* TorchService.swift */; };
 		196017A18368B5C88C4C8562 /* PatternPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E92B0313C6A1B4308445F4 /* PatternPreviewView.swift */; };
+		30EE549A022A78659E584C62 /* FullScreenPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E19643D630926E6B6363D58 /* FullScreenPreviewView.swift */; };
 		58A71E1C5F6B7D11F727EE7F /* TorchPatternsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1361E9C1DBDBBEBC3082C108 /* TorchPatternsApp.swift */; };
 		9F98B83F07C25598AEF60BBB /* TorchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7FE58F0DFBA59E6EA4FF49 /* TorchViewModel.swift */; };
 		C14BE79A4A6C8834AFD0D7CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A8E7636691A6AC158B0C056 /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 /* Begin PBXFileReference section */
 		1361E9C1DBDBBEBC3082C108 /* TorchPatternsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TorchPatternsApp.swift; sourceTree = "<group>"; };
 		223735B9A33ACA7028A673BF /* TorchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TorchService.swift; sourceTree = "<group>"; };
+		2E19643D630926E6B6363D58 /* FullScreenPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenPreviewView.swift; sourceTree = "<group>"; };
 		3D1AD3641EAFFC6E1A4607F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		7A8E7636691A6AC158B0C056 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A92B48371A90809ACD7B2CF4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -50,6 +52,7 @@
 			children = (
 				7A8E7636691A6AC158B0C056 /* Assets.xcassets */,
 				A92B48371A90809ACD7B2CF4 /* ContentView.swift */,
+				2E19643D630926E6B6363D58 /* FullScreenPreviewView.swift */,
 				3D1AD3641EAFFC6E1A4607F2 /* Info.plist */,
 				F7FE72D183F75E8773437044 /* PatternEngine.swift */,
 				C7E92B0313C6A1B4308445F4 /* PatternPreviewView.swift */,
@@ -132,6 +135,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0700C809CF47AC3A9BDBEACC /* ContentView.swift in Sources */,
+				30EE549A022A78659E584C62 /* FullScreenPreviewView.swift in Sources */,
 				08C80FC30B840FC34504CE29 /* PatternEngine.swift in Sources */,
 				196017A18368B5C88C4C8562 /* PatternPreviewView.swift in Sources */,
 				58A71E1C5F6B7D11F727EE7F /* TorchPatternsApp.swift in Sources */,

@@ -1,4 +1,5 @@
 import Combine
+import UIKit
 
 enum PatternKind: String, CaseIterable, Identifiable {
     case continuous, strobe, beacon, sos
@@ -6,13 +7,14 @@ enum PatternKind: String, CaseIterable, Identifiable {
 }
 
 final class TorchViewModel: ObservableObject {
-    @Published var kind: PatternKind = .continuous
+    @Published var kind: PatternKind = .strobe
     @Published var brightness: Float = 0.75
     @Published var freqHz: Double = 2.0
     @Published var duty: Double = 0.5
     @Published var safetyCapEnabled = true
     @Published var isRunning = false
     @Published var log = [String]()
+    @Published var isPreviewEnabled = true
 
     private let service = TorchService()
     private lazy var engine = PatternEngine(service: service)
@@ -33,6 +35,7 @@ final class TorchViewModel: ObservableObject {
             try engine.start(p, level: brightness)
             isRunning = true
             log.append("Started \(kind.rawValue)")
+            setIdleTimer(disabled: true)
         } catch {
             log.append("Start failed: \(error)")
         }
@@ -42,5 +45,12 @@ final class TorchViewModel: ObservableObject {
         engine.stop()
         isRunning = false
         log.append("Stopped")
+        setIdleTimer(disabled: false)
+    }
+
+    private func setIdleTimer(disabled: Bool) {
+        DispatchQueue.main.async {
+            UIApplication.shared.isIdleTimerDisabled = disabled
+        }
     }
 }
