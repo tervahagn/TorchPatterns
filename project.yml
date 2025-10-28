@@ -1,0 +1,21 @@
+name: TorchPatterns
+options:
+  deploymentTarget:
+    iOS: '16.0'
+settings:
+  base:
+    INFOPLIST_FILE: TorchPatterns/Info.plist
+targets:
+  TorchPatterns:
+    type: application
+    platform: iOS
+    sources:
+      - path: TorchPatterns
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.tervahagn.torchpatterns
+        SWIFT_VERSION: 5.9
+        DEVELOPMENT_TEAM: "5866C37Q4G"
+        CODE_SIGN_STYLE: Automatic
+        CODE_SIGN_IDENTITY: "Apple Development"
+        ENABLE_USER_SCRIPT_SANDBOXING: NO
